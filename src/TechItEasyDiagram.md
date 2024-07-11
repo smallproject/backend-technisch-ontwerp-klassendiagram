@@ -93,7 +93,7 @@ graph TD;
     TV "0..1" -- "0..1" RemoteControl:has a    
 ```
 
-**Functioneel eisen**
+## **Functioneel eisen**
 
 Als beheerder wil ik een overzicht van het product inkoop en kosten van inkoop.
 
@@ -110,7 +110,7 @@ Als gebruiker wil ik zien hoe is het product van elkaar verbind.
 
 
 
-**Niet Functioneel eisen**
+## Niet Functioneel eisen
 
 Als gebruiker wil ik dat het applicatie snel draait.
 
@@ -120,3 +120,10 @@ Als gebruiker wil ik dat het applicatie altijd beschikbaar is.
 Als gebruiker wil ik dat het applicatie op mijn telefoon kan gebruiken.
 
 Als gebruiker wil ik dat het applicatie een dark mode kan stellen.
+
+Als gebruiker wil ik dat het applicatie betrouwbaar is.
+
+Als gebruiker wil ik dat het applicatie veilig is.
+
+Als gebruiker wil ik dat het applicatie gebruikers vriendelijk is.
+
