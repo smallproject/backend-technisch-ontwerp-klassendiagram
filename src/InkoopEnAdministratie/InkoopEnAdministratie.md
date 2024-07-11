@@ -29,11 +29,17 @@ graph TD;
         -Address
         -PostCode
         -ContactNo
+        -EmailAddress
         -Role
+        
+        getRole(id)
+        getContactNo(id)
+        getEmailAddress(id)
     }
     
     
     class Product {
+        <<ABSTRACT>>
         -id
         -name
         -priceSold
@@ -50,18 +56,30 @@ graph TD;
     
     class TV {
         -Brand
+        -size
+        -resolution
+        
+        getBrand(id);
     }    
     
     class CiModule {
+        -provider
+        -cam type
         
+        getProvider(id);
     }
     
     class Beugels {
+        -maxWeight
+        -maxSize   
         
+        getMaxWeight(id);
     }
     
     class RemoteControl {
+        -brand
         
+        getBrand(id);
     }
     
     Product --> TV
@@ -70,8 +88,7 @@ graph TD;
     Product --> RemoteControl
 
 
-        TV "0..*" -- "0..1" CiModule
-        TV "0..*" -- "0..1" Beugels
-        TV "0..1" -- "0..1" RemoteControl
-    
+    TV "0..*" -- "0..1" CiModule:has a
+    TV "0..*" -- "0..1" Beugels:can have
+    TV "0..1" -- "0..1" RemoteControl:has a    
 ```
